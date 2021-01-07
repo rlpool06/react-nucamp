@@ -7,7 +7,7 @@ import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
 import About from './AboutComponent'
 
-import { Switch, Route, Redirect, withRouther } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
@@ -59,4 +59,4 @@ class Main extends Component {
     }
 }
 
-export default withRouther(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps)(Main));
