@@ -40,7 +40,7 @@ class CommentForm extends Component {
     render() {
         return(
             <React.Fragment>
-                <Button outline className="fa fa-pencil fa-lg" onClick={this.toggleModal}>Submit Comment</Button>
+                <Button outline className="fa fa-pencil fa-lg" onClick={this.toggleModal}> Submit Comment</Button>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
                 <ModalBody>
