@@ -40,7 +40,7 @@ class CommentForm extends Component {
     render() {
         return(
             <React.Fragment>
-                <Button outline className="fa fa-pencil fa-lg" onClick={this.toggleModal}> Submit Comment</Button>
+                <Button outline onClick={this.toggleModal}><i className="fa fa-pencil fa-lg" /> Submit Comment</Button>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
                 <ModalBody>
@@ -81,11 +81,11 @@ class CommentForm extends Component {
                             <Label htmlFor="Comment">Comment</Label>
                             <Control.textarea model='.text' id='text' name="Comment" rows="6" className="form-control" />
                         </div>
-                        <div className="form-group">
+                        
                             <Button type="submit" color="primary">
-                                Submit Form
+                                Submit
                             </Button>
-                        </div>
+                        
                     </LocalForm>
                 </ModalBody>
                 </Modal>
