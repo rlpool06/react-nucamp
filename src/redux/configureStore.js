@@ -5,7 +5,7 @@ import { Campsites } from './campsites';
 import { Comments } from './comments';
 import { Partners } from './partners';
 import { Promotions } from './promotions';
-import { createForms, creatForms } from 'react-redux-form';
+import { createForms } from 'react-redux-form';
 import { InitialFeedback } from './forms';
 
 
