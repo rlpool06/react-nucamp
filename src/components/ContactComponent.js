@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row  } from 'reactstrap';
-import { Control, Form, Errors, actions } from 'react-redux-form';
+import { Control, Form, Errors } from 'react-redux-form';
 import { Link } from 'react-router-dom';
 
 const required = val => val && val.length;
@@ -138,7 +138,8 @@ class Contact extends Component {
                                         validators={{
                                             required,
                                             minLength: minLength(10),
-                                            maxLength: maxLength(15)
+                                            maxLength: maxLength(15),
+                                            isNumber
                                         }}
                                     />
                                     <Errors
