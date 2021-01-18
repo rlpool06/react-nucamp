@@ -28,13 +28,11 @@ function RenderPartner({partner}) {
 function PartnerList(props) {
     const partners = props.partners.partners.map(partner => {
         return (
-            <div className="col mt-4">
                 <Fade in key={partner.id}>
                     <Media tag="li">
                         <RenderPartner partner={partner} />
                     </Media>
                 </Fade>
-            </div>    
             )
         });
 
